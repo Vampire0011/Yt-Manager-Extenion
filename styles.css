@@ -1,0 +1,25 @@
+/* Hide Shorts UI when the setting is enabled; content.js toggles this class. */
+html.yt-toolbox-hide-shorts ytd-reel-shelf-renderer,
+html.yt-toolbox-hide-shorts ytd-rich-section-renderer:has(ytd-reel-shelf-renderer),
+html.yt-toolbox-hide-shorts a[href^="/shorts/"],
+html.yt-toolbox-hide-shorts ytd-mini-guide-entry-renderer[aria-label*="Shorts" i],
+html.yt-toolbox-hide-shorts ytd-guide-entry-renderer a[title="Shorts"] {
+  display: none !important;
+}
+
+/* Study mode: keep the player and primary video details, hide common distractions. */
+html.yt-toolbox-study ytd-watch-next-secondary-results-renderer,
+html.yt-toolbox-study #secondary,
+html.yt-toolbox-study ytd-reel-shelf-renderer,
+html.yt-toolbox-study ytd-rich-section-renderer:has(ytd-reel-shelf-renderer),
+html.yt-toolbox-study ytd-comments,
+html.yt-toolbox-study #related,
+html.yt-toolbox-study ytd-merch-shelf-renderer,
+html.yt-toolbox-study ytd-engagement-panel-section-list-renderer {
+  display: none !important;
+}
+
+html.yt-toolbox-study ytd-watch-flexy #primary {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
