@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>YouTube Toolbox</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header><div class="logo">YT</div><div><h1>YouTube Toolbox</h1><p>Clean up your YouTube</p></div></header>
+  <section class="switches">
+    <label class="switch-row"><span><strong>Hide Shorts</strong><small>Hide Shorts shelves and links</small></span><input id="hideShorts" type="checkbox"></label>
+    <label class="switch-row"><span><strong>Study Mode</strong><small>Hide recommendations and distractions</small></span><input id="studyMode" type="checkbox"></label>
+  </section>
+  <section class="card">
+    <h2>Watched Video Finder</h2><p class="hint">Search videos this extension records after you watch them for at least 30 seconds.</p>
+    <input id="watchedSearch" type="search" placeholder="Search saved watched videos"><div id="watchedCount" class="hint"></div><div id="watchedResults" class="results"></div>
+    <button id="clearWatched" class="button secondary">Clear local watch list</button>
+  </section>
+  <section class="card">
+    <h2>Choose what to remove</h2>
+    <p class="hint">Open YouTube Manage subscriptions, Watch Later, or a playlist. Scan the page, select only the items you want, then remove the selection.</p>
+    <button id="scanPage" class="button">Scan current YouTube page</button>
+    <div id="scanStatus" class="status">No scan yet.</div>
+    <div class="selection-actions"><button id="selectAll" class="button secondary small">Select all</button><button id="selectNone" class="button secondary small">Select none</button></div>
+    <div id="cleanupResults" class="cleanup-results"><div class="empty">Scan a supported YouTube page to list items here.</div></div>
+    <button id="removeSelected" class="button danger">Remove selected (0)</button>
+    <p class="footnote">Only selected items from the currently loaded page are processed. Review the selection carefully. YouTube may change its interface, so verify the result.</p>
+  </section>
+  <footer>Runs locally in your browser. Never enter your Google password into this extension.</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
