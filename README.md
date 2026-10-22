@@ -34,7 +34,7 @@ A lightweight Chrome extension for making YouTube easier to manage and less dist
 Clone the repository:
 
 ```bash
-git clone <YOUR_GIT_REPOSITORY_URL>
+git clone https://github.com/Vampire0011/Yt-Manager-Extenion
 ```
 
 Replace `<YOUR_GIT_REPOSITORY_URL>` with the clone URL from your Git hosting page. Or download the repository as a ZIP and extract it.
